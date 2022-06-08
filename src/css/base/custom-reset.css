@@ -1,0 +1,59 @@
+/*========== Custom reset ==========*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.6;
+  font-family: var(--body-font);
+  /* font-size: var(--normal-font-size);
+  color: var(--text-color);
+  background-color: var(--body-color); */
+}
+
+.wrapper {
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  background-color: var(--body-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  /*
+    Get rid of that small space under your images
+    https://www.youtube.com/watch?v=plOl7TNc89A
+    Images are inline elements, they behave like inline-block but they are inline elements.
+    They're built-in to have that space underneath them so that they will line up with text.
+    This happens back to the old days of the web. These days we generally don't do that.
+    Simply put display: block to change the behavior of images.
+   */
+  display: block;
+}
